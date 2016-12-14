@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+{% block itemTitle %}
+{% endblock %}
+
+{% block itemDescription %}
+    {% for movie in movies %}
+        <h3><a href="{% url 'h-movies' movie.id %}"> {{ movie.title }} </a>></h3>
+        <pre>{{ movie.text }}</pre>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}
+    Movies
+{% endblock %}
+
+{% block itemTitle %}
+{% endblock %}
+
+{% block itemDescription %}
+    <h3>{{ movie.title }}</h3>
+    <pre>{{ movie.text }}</pre>
+{% endblock %}
